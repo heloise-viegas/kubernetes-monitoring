@@ -6,11 +6,14 @@ Hence this is a documentation of my learnings with this tool.
 
 This was my second attempt at learning Prometheus and has been far more successful than the first thanks to this [Tutorial](https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/) by Bibin Wilson at [Devopscube.](https://devopscube.com/)
 You could also use this tutorial as an example for RBAC, Config Maps and Deployments.
+
 **P.S.** Please refer to the tutorial link for complete steps. This document is just addon notes from my perspective.
 
 # Prometheus
 Prometheus scrapes metrics from all Kubernetes resources. This is helpful to setup resource limits in pods and also to create various alerts.
 ### How does it work?
+
+As many of you may know this [Video](https://youtu.be/h4Sl21AKiDg?si=aW4Sh00qy7r-8cdC) by [Tech World With Nana](https://www.techworld-with-nana.com/) beautifully explains how Prometheus works. It is a must watch to understand and setup Prometheus. 
 
 ## Resources 
 The Kubernetes resources that were created to setup Prometheus are as follows:
