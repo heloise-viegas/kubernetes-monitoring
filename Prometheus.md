@@ -3,7 +3,8 @@
 Prometheus is a well know Kubernetes monitoring tool. There are many ways to install and configure prometheus be it on local clusters or managed services on managed clusters.
 As a Kubernetes admin one needs to know the basics of how this tool works.
 Hence this is a documentation of my learnings with this tool.
-This was my second attempt at learning Prometheus and has been far more successful than the first thanks to this [Tutorial](https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/) by Bibin Wilison at [Devopscube.](https://devopscube.com/)
+
+This was my second attempt at learning Prometheus and has been far more successful than the first thanks to this [Tutorial](https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/) by Bibin Wilson at [Devopscube.](https://devopscube.com/)
 You could also use this tutorial as an example for RBAC, Config Maps and Deployments.
 **P.S.** Please refer to the tutorial link for complete steps. This document is just addon notes from my perspective.
 
