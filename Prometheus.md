@@ -27,7 +27,8 @@ The Kubernetes resources that were created to setup Prometheus are as follows:
 - Deployment: prometheus-deployment
 
 
-![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/e5e03b81-6cc2-4414-aeb3-6d7be75d4723)
+![Prom1](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/43d9faef-182a-4858-83c9-63e1b2ac6e73)
+
  
 ### RBAC
 - Role-based access control (RBAC) is a method of managing access to resources based on the kind of roles of individual users.
