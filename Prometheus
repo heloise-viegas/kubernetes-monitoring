@@ -1,4 +1,4 @@
-# Monitoring on Kubernetes - Part 1
+#Monitoring on Kubernetes - Part 1
 
 Prometheus is a well know Kubernetes monitoring tool. There are many ways to install and configure prometheus be it on local clusters or managed services on managed clusters.
 As a Kubernetes admin one needs to know the basics of how this tool works.
