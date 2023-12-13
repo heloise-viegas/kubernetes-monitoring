@@ -30,12 +30,12 @@ The Kubernetes resources that were created to setup Prometheus are as follows:
 ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/e5e03b81-6cc2-4414-aeb3-6d7be75d4723)
  
 ### RBAC
-Role-based access control (RBAC) is a method of managing access to resources based on the kind of roles of individual users.
-To implement RBAC we need a Service Account that is bound to a Role via a RoleBinding.
-In Kubernetes we have 2 types of RBAC: 
+- Role-based access control (RBAC) is a method of managing access to resources based on the kind of roles of individual users.
+- To implement RBAC we need an Identity(User/Group/ServiceAccount) that is bound to a Role via a RoleBinding.
+- In Kubernetes, we have 2 types of RBAC: 
     - Service Account, Role, RoleBinding (for access within a namespace)
     - Service Account, ClusterRole, ClusterRoleBinding (for access across namespaces)
-For Prometheus we need metrics across namespaces hence we use ClusterRole and   ClusterRoleBinding.
+- For Prometheus, we need metrics across namespaces hence we use ClusterRole and   ClusterRoleBinding.
 
 ### The Cluster Role: prometheus
  - ClusterRole contains rules or set of permissions.
@@ -84,4 +84,4 @@ For Prometheus we need metrics across namespaces hence we use ClusterRole and   
 ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/edc02ab5-f9a8-40ee-b52d-4f8f01cf5169)
 
 This brings us to the end of part1, where I have explicitly noted down points that could be difficult to understand in the first attempt.
-As you may have noticed I have overlooked many basic concepts like container image, labels, port-forwarding, since these are well known and easily understood by most of us who deal daily with Kubernetes.
+As you may have noticed I have overlooked many basic concepts like container image, labels, port-forwarding, since these are well-known and easily understood by most of us who deal daily with Kubernetes.
