@@ -25,6 +25,9 @@ The Kubernetes resources that were created to setup Prometheus are as follows:
 - Service Account: default (created by k8s in monitoring namespace)
 - Config Map: prometheus-server-conf
 - Deployment: prometheus-deployment
+
+
+![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/e5e03b81-6cc2-4414-aeb3-6d7be75d4723)
  
 ### RBAC
 Role-based access control (RBAC) is a method of managing access to resources based on the kind of roles of individual users.
@@ -77,6 +80,8 @@ For Prometheus we need metrics across namespaces hence we use ClusterRole and   
 - There are 2 volumes that are created
 	- volume 1 is created from the config map **prometheus-server-conf** and is used   to access the scrape configs
 	- volume 2 is a shared volume of type EmptyDir , used for storage that is not persistent.
+
+![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/edc02ab5-f9a8-40ee-b52d-4f8f01cf5169)
 
 This brings us to the end of part1, where I have explicitly noted down points that could be difficult to understand in the first attempt.
 As you may have noticed I have overlooked many basic concepts like container image, labels, port-forwarding, since these are well known and easily understood by most of us who deal daily with Kubernetes.
