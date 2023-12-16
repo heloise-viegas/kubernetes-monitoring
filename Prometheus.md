@@ -81,6 +81,10 @@ The Kubernetes resources that were created to setup Prometheus are as follows:
 - There are 2 volumes that are created
 	- volume 1 is created from the config map **prometheus-server-conf** and is used   to access the scrape configs
 	- volume 2 is a shared volume of type EmptyDir , used for storage that is not persistent.
+- This deployment refers to the job named **kubernetes-service-endpoints** in the above configmap
+- For any service to be discovered by Prometheus the below annotation is required in the service file: 
+	- prometheus.io/scrape: 'true', 
+	- prometheus.io/port: '9090' 
 
 ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/edc02ab5-f9a8-40ee-b52d-4f8f01cf5169)
 
