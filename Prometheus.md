@@ -89,4 +89,4 @@ The Kubernetes resources that were created to setup Prometheus are as follows:
 ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/edc02ab5-f9a8-40ee-b52d-4f8f01cf5169)
 
 This brings us to the end of part1, where I have explicitly noted down points that could be difficult to understand in the first attempt.
-As you may have noticed I have overlooked many basic concepts like container image, labels, port-forwarding, since these are well-known and easily understood by most of us who deal daily with Kubernetes.
+As you may have noticed I have overlooked many basic concepts like container image, labels, port-forwarding, since these are well-known and easily understood by most of us who deal with Kubernetes.
