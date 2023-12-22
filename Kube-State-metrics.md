@@ -27,3 +27,7 @@ All resources are deployed in kube-system namespace. For more details on these r
       - job_name: 'kube-state-metrics'
         static_configs:
          - targets: ['kube-state-metrics.kube-system.svc.cluster.local:8080']
+
+- Once we deploy the Kube-state-metrics as shown in the tutorial and verify that the above code is present in the config map we should see the kube-state- 
+  metrics with status UP.![MicrosoftTeams-image (1)](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/1421d407-32c2-4583-9614-ef0a29701128)
+
