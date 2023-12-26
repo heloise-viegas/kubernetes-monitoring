@@ -22,7 +22,7 @@ The Kubernetes resources that were created to setup Prometheus are as follows:
 All resources are deployed in kube-system namespace. For more details on these resources refer to Part1 of this series.
 
 
-- For Kube-state-metrics state to be Up in Prometheus dashboard the following is configured: the config map in Part1 containing the Prometheus scrape config i.e. **prometheus-server-conf** job i.e. **kube-state-metrics** has the DNS of the kube-state-metrics service
+- For Kube-state-metrics state to be Up in Prometheus dashboard the following is configured: the config map in Part1 containing the Prometheus scrape config i.e. **prometheus-server-conf** job and **kube-state-metrics** has the DNS of the kube-state-metrics service
 
       - job_name: 'kube-state-metrics'
         static_configs:
