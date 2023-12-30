@@ -31,19 +31,19 @@ Reference: https://github.com/kubernetes/kube-state-metrics/blob/main/docs
 	
  ***container_memory_usage_bytes{namespace="monitoring", pod="prometheus-deployment-556fbcc476-7fvdj"}*** ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/9851f336-958b-4dc3-bc46-5066b266395e)
  
-2. Display the absolute memory usage of a specific pod over the last 5 minutes
+2. Display the absolute memory usage of a specific pod over the last 5 minutes.
 	
  ***container_memory_usage_bytes{namespace="monitoring", pod="prometheus-deployment-556fbcc476-7fvdj"}[5m]*** ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/4ed56e08-8b53-4dd9-bfb4-5cd19743d253)
  
-3. Display the rate of change of memory usage of a specific pod over the last 5 minutes
+3. Display the rate of change of memory usage of a specific pod over the last 5 minutes.
 	
  ***rate(container_memory_usage_bytes{namespace="monitoring", pod="prometheus-deployment-556fbcc476-7fvdj"}[5m])*** ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/3dd3e2e4-a9fd-4b74-b25e-2cf5f58b46a2)
  
-4. Display absolute memory usage of pods, show only namespaces and pod names
+4. Display absolute memory usage of pods, show only namespaces and pod names.
 	
  ***sum by (namespace,pod)(container_memory_usage_bytes)*** ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/a55720b2-7eaa-4011-a0bb-4537121363af)
  
-5. By default the output is in bytes, convert to MB and GB
+5. By default the output is in bytes, convert to MB and GB.
 	
  ***MB :  sum by (namespace,pod)(container_memory_usage_bytes)/ (1024 * 1024 ) 
 GB : sum by (namespace,pod)(container_memory_usage_bytes)/ (1024 * 1024 * 1024)***  ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/236395b0-a2b1-47a4-8322-698ff4c995e7)
