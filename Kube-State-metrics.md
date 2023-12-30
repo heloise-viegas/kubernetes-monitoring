@@ -3,15 +3,6 @@ In part 1 we setup Prometheus on our Kubernetes cluster. Now we proceed to setup
 Here is the complete [Tutorial](https://devopscube.com/setup-kube-state-metrics/) that I have followed. 
 P.S. These are my observations and key pointers while performing this setup. 
 
-# Kube Metrics
-- Kube Metrics is responsible for providing details from Kubernetes API regarding the various resources deployed on the cluster.
-Issues on Minikube:
-- [docker - kubectl top node `error: metrics not available yet` . Using metrics-server as Heapster Depricated - Stack Overflow](https://stackoverflow.com/questions/52694238/kubectl-top-node-error-metrics-not-available-yet-using-metrics-server-as-he)
-- [kubernetes - Failed to install metrics-server on minikube - Stack Overflow](https://stackoverflow.com/questions/70740997/failed-to-install-metrics-server-on-minikube)
-- [Easily Install Kubernetes Metrics Server in minikube Now! 🧊 (thospfuller.com)](https://thospfuller.com/2020/11/29/easy-kubernetes-metrics-server-install-in-minikube-in-five-steps/)
-- [kubernetes - Why is my minikube metrics-server addon not reporting pod metrics (docker 20.x)? - Stack Overflow](https://stackoverflow.com/questions/72139279/why-is-my-minikube-metrics-server-addon-not-reporting-pod-metrics-docker-20-x)
-- [kubernetes - Failed to install metrics-server on minikube - Stack Overflow](https://stackoverflow.com/questions/70740997/failed-to-install-metrics-server-on-minikube)
-
 ## Resources 
 The Kubernetes resources that were created to setup Prometheus are as follows:
 - Cluster Role: kube-state-metrics
