@@ -15,7 +15,7 @@ The Kubernetes resources that were created in the *monitoring namespace* to setu
 - This config map is used via a volume mount in the deployment
 - In the Grafana UI, while adding the Data Source we need to specify the Prometheus service name i.e. http://prometheus-service:8080 or dns http://prometheus-service.monitoring.svc:8080.
 
-- Few dashboards I managed to import:
+- Few dashboards I managed to import (https://grafana.com/grafana/dashboards/):
 ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/fffb24ae-0e00-42ec-accc-63813490b78c)
 
 ![image](https://github.com/heloise-viegas/kubernetes-monitoring/assets/37453877/76284ca2-06b9-4424-8f9c-c426b15fd826)
